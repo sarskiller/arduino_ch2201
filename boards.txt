@@ -1,0 +1,67 @@
+# Copyright (C) 2020 Li Jingshuo rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+menu.UploadSpeed=Upload Speed
+menu.CpuFrequency=CPU Frequency
+menu.FlashSize=Flash Size
+menu.FlashMode=Flash Mode
+menu.FlashFreq=Flash Frequency
+menu.ResetMethod=Reset Method
+menu.ESPModule=Module
+menu.Debug=Debug port
+menu.DebugLevel=Debug Level
+
+##############################################################
+cb2201.name=CB2201 YoC EVB
+
+cb2201.upload.tool=esptool
+cb2201.upload.speed=115200
+cb2201.upload.resetmethod=nodemcu
+cb2201.upload.maximum_size=262144
+cb2201.upload.maximum_data_size=81920
+cb2201.upload.wait_for_upload_port=true
+cb2201.serial.disableDTR=false
+cb2201.serial.disableRTS=false
+
+cb2201.build.mcu=ch2201
+cb2201.build.f_cpu=80000000L
+cb2201.build.board=CH2201
+cb2201.build.core=ch2201
+cb2201.build.variant=cb2201
+cb2201.build.flash_mode=dio
+cb2201.build.flash_size=256K
+cb2201.build.flash_freq=40
+cb2201.build.debug_port=
+cb2201.build.debug_level=
+
+cb2201.menu.CpuFrequency.80=80 MHz
+cb2201.menu.CpuFrequency.80.build.f_cpu=80000000L
+
+cb2201.menu.UploadSpeed.115200=115200
+cb2201.menu.UploadSpeed.115200.upload.speed=115200
+cb2201.menu.UploadSpeed.9600=9600
+cb2201.menu.UploadSpeed.9600.upload.speed=9600
+cb2201.menu.UploadSpeed.57600=57600
+cb2201.menu.UploadSpeed.57600.upload.speed=57600
+cb2201.menu.UploadSpeed.512000.windows=512000
+cb2201.menu.UploadSpeed.512000.upload.speed=512000
+
+
+cb2201.menu.FlashSize.256K=256K (256K eFlash)
+cb2201.menu.FlashSize.256K.build.flash_size=256K
+cb2201.menu.FlashSize.256K.build.flash_ld=ch2201_tee.ld
+cb2201.menu.FlashSize.256K.build.start=0x100000
+cb2201.menu.FlashSize.256K.build.end=0x3FB000
+cb2201.menu.FlashSize.256K.build.blocksize=8192
+cb2201.menu.FlashSize.256K.build.pagesize=256
